@@ -1,0 +1,60 @@
+.header {
+  background-size: cover;
+  background-image: url('./static//human.jpg');
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  .Dicon {
+    margin-top: 20px;
+    color: red;
+    padding: 5px 12px 5px 12px;
+    border-radius: 30px;
+    border: 2px solid red;
+    height: fit-content;
+    width: fit-content;
+    font-size: 33px;
+    cursor: pointer;
+    @keyframes pulse {
+      from { transform: scale(0.8); }
+      to { transform: scale(1.2); }
+    }
+    &:hover {
+      animation: pulse 1s infinite ease-in-out alternate;
+      transition: .5s;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        display: inline-block;
+        margin-right: 30px;
+        a{
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 20px;
+          text-transform: capitalize;
+          color: red;
+          cursor: pointer;
+          &:hover {
+            color: white;
+          }
+        }
+  
+      }
+      button {
+        background-color: transparent;
+        color: red;
+        border: 2px solid red;
+        border-radius: 30px;
+        transition: .4s;
+        cursor: pointer;
+        &:hover {
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+  }
+}
