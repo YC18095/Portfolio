@@ -1,60 +1,183 @@
+$colorRed: #b13a37;
+
+.section {
+  position: relative;
+}
+
 .header {
+  position: absolute;
   background-size: cover;
   background-image: url('./static//human.jpg');
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: space-around;
+
   .Dicon {
     margin-top: 20px;
-    color: red;
+    color: $colorRed;
     padding: 5px 12px 5px 12px;
     border-radius: 30px;
-    border: 2px solid red;
+    border: 2px solid $colorRed;
     height: fit-content;
     width: fit-content;
     font-size: 33px;
     cursor: pointer;
+
     @keyframes pulse {
-      from { transform: scale(0.8); }
-      to { transform: scale(1.2); }
+      from {
+        transform: scale(0.8);
+      }
+
+      to {
+        transform: scale(1.2);
+      }
     }
+
     &:hover {
       animation: pulse 1s infinite ease-in-out alternate;
       transition: .5s;
     }
   }
+
   nav {
     ul {
       display: flex;
       justify-content: space-between;
+
       li {
         display: inline-block;
         margin-right: 30px;
-        a{
-          font-family:Georgia, 'Times New Roman', Times, serif;
+
+        a {
+          font-family: Georgia, 'Times New Roman', Times, serif;
           font-size: 20px;
           text-transform: capitalize;
-          color: red;
+          color: $colorRed;
           cursor: pointer;
+
           &:hover {
             color: white;
           }
         }
-  
+
       }
+
       button {
         background-color: transparent;
-        color: red;
-        border: 2px solid red;
+        color: $colorRed;
+        border: 2px solid $colorRed;
         border-radius: 30px;
         transition: .4s;
         cursor: pointer;
+
         &:hover {
-          background-color: red;
+          background-color: $colorRed;
           color: white;
         }
       }
     }
   }
+}
+
+
+.container {
+  position: absolute;
+  top: 25%;
+  left: 23%;
+
+  h1 {
+    color: white;
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+  }
+
+  span {
+    display: inline-block;
+    top: 11%;
+    left: 30%;
+    position: absolute;
+
+    p {
+      margin-top: 0;
+      color: $colorRed;
+      font-size: 30px;
+    }
+  }
+
+  h3 {
+    color: #eee;
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  p {
+    width: 400px;
+    max-width: 100%;
+    color: #eee;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .social a {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+
+    background-color: $colorRed;
+    margin-bottom: 30px;
+
+    &:hover {
+      transform: scale(1.5);
+      background-color: #eee;
+      color: $colorRed;
+      transition: .4s;
+    }
+  }
+
+  .btn {
+    color: #eee;
+    background: $colorRed;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.5);
+      background-color: #eee;
+      color: $colorRed;
+      transition: .4s;
+    }
+
+
+  }
+
+  .bottom {
+    margin-top: 243px;
+    padding-bottom: 40px;
+
+    p {
+      color: #eee;
+      letter-spacing: 2px;
+      font-size: 15px;
+    }
+  }
+
+
+
 }
