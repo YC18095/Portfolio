@@ -31,11 +31,9 @@ html {
           transform: scale(1.2);
         }
       }
-  
-      &:hover {
-        animation: pulse 1s infinite ease-in-out alternate;
-        transition: .5s;
-      }
+
+      animation: pulse 1s infinite ease-in-out alternate;
+      transition: .5s;
     }
   
     nav {
@@ -163,16 +161,18 @@ html {
   display: flex;
   align-items: center;
   justify-content:center;
-  width: 1430px;
+  width: 1903px;
   margin:  auto;
+  background-image: url("./static/simpleBG.jpg");
   .about-img{
     img {
-      width: 343px;
-      height: 380px;
+      width: 360px;
+      height: 465px;
     }
   }
   .about-text {
-    background-color: #232625;
+    background-color: transparent;
+    border: 10px;
     margin-left: 50px;
     width: 500px;
     height: fit-content;
@@ -183,6 +183,7 @@ html {
       color: white;
     }
     h5 {
+      width: 450px;
       line-height: 1.8;
       color: $colorRed;
       font-family: Georgia, 'Times New Roman', Times, serif;
